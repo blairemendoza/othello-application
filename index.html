@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Othello</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <script src="lodash.js" defer></script>
+    <script src="sketch.js" defer></script>
+    <script src="board.js" defer></script>
+    <script src="tile.js" defer></script>
+    <script src="ai.js" defer></script>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #defaultCanvas0 {
+        border: 4px solid black;
+      }
+
+      button {
+        width: 30%;
+        padding: 0.5rem 0;
+        margin: auto;
+      }
+
+      div {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h4>White:</h4>
+      &nbsp;
+      <h4 id="white">0</h4>
+    </div>
+    <div>
+      <h4>Black:</h4>
+      &nbsp;
+      <h4 id="black">0</h4>
+    </div>
+    <main id="canvas"></main>
+    <button onclick="resetSketch()">Reset</button>
+  </body>
+</html>
